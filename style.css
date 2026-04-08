@@ -1,0 +1,72 @@
+body {
+  /* Uno sfondo sfumato elegante */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pagina {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 1px;
+  padding: 50px;
+  border: solid 3px black;
+}
+
+/* Cambia da #btn a .btn */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Rimuove la sottolineatura del link */
+  width: 200px;
+  height: 200px;
+  font-size: 24px;
+  border-radius: 30px;
+  background-color: blueviolet;
+  transition: all 0.5s ease; 
+}
+
+.btn:hover {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.punti-chiave {
+  padding: 30px;
+  border-radius: 10px;
+  border: solid 1px black;
+}
+
+.bottoni {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 100px;
+}
+
+/* Sistema il testo */
+.descrizione {
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+  border: solid 2px black;
+  width: 60%;
+  background-color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    width: 90%; /* Il box diventa largo quasi tutto lo schermo */
+    font-size: 16px;
+  }
+  .bottoni {
+    gap: 20px; /* Riduce lo spazio tra i bottoni sui piccoli schermi */
+  }
+}
